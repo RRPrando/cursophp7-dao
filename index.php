@@ -32,7 +32,13 @@ $aluno->insert();
 echo $aluno;*/
 
 //UPDATE EM UM USUARIO
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("professor","!@#$%^&*");
+echo $usuario;*/
+
+//DELETA UM USUARIO
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
